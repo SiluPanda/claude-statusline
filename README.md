@@ -36,7 +36,20 @@ sudo apt install jq    # Debian/Ubuntu
 
 ## Installation
 
-### 1. Download the script
+### Quick install (recommended)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/SiluPanda/claude-statusline/main/install.sh | bash
+```
+
+This downloads the script to `~/.claude/statusline.sh`, makes it executable, and configures `~/.claude/settings.json` automatically. Restart Claude Code after running.
+
+### Manual installation
+
+<details>
+<summary>Click to expand</summary>
+
+#### 1. Download the script
 
 ```bash
 # Clone this repo
@@ -46,7 +59,7 @@ git clone https://github.com/SiluPanda/claude-statusline.git
 curl -o ~/.claude/statusline.sh https://raw.githubusercontent.com/SiluPanda/claude-statusline/main/statusline.sh
 ```
 
-### 2. Make it executable
+#### 2. Make it executable
 
 ```bash
 chmod +x statusline.sh
@@ -54,7 +67,7 @@ chmod +x statusline.sh
 chmod +x ~/.claude/statusline.sh
 ```
 
-### 3. Configure Claude Code to use it
+#### 3. Configure Claude Code to use it
 
 Add the following to your Claude Code settings file at `~/.claude/settings.json`:
 
@@ -78,9 +91,11 @@ For example, if you placed the script in `~/.claude/`:
 
 If you already have a `settings.json` with other settings, just add the `"statusline"` key to the existing object.
 
-### 4. Restart Claude Code
+#### 4. Restart Claude Code
 
 The statusline will appear at the bottom of your terminal the next time you start a Claude Code session.
+
+</details>
 
 ## Customization
 
