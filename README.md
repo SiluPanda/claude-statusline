@@ -1,5 +1,7 @@
 # Claude Code Statusline
 
+
+
 A custom statusline script for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) that displays rich session information in your terminal.
 
 ![Line 1] Model name, context size, working directory, git branch/status, worktree, agent name, vim mode, and repo link
